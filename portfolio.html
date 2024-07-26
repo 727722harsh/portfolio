@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>PORTFOLIO</title>
+    <style>
+        .navi {
+            display:grid;
+            grid-template-rows:auto auto auto;
+        }
+        
+        .li {
+            float: right;
+            padding: 15px;
+            font-size: large;
+            font-family: sans-serif;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+            background-color: aqua;
+        }
+
+        .li:hover {
+            text-shadow: 2px 2px 3px blue;
+        }
+
+        .le {
+            float: left;
+            font-size: 30px;
+            padding-top: 3px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .fi {
+            display: block;
+            background-color: rgb(8, 27, 41);
+            width: 100%;
+            margin-top: 20%;
+        }
+
+        .wo {
+            display: grid;
+            grid-template-columns: auto auto;
+            float: left;
+            gap: 20px;
+            background-color: rgb(8, 27, 41);
+            border: 3px solid rgb(8, 27, 41);
+            border-radius: 20px;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 80px;
+            margin-left: 150px;
+            margin-right: 60px;
+            padding:10px;
+            box-shadow: 7px 7px 7px blue;
+        }
+        .about
+        {
+            background-color: rgb(18, 46, 67);
+            margin-top: 5%;
+            margin-left: 150px;
+            margin-right: 60px;
+            border-radius: 20px;
+            box-shadow: 7px 7px 7px red;
+        }
+        a
+        {
+            text-decoration: none;
+            color:black;
+        }
+        input
+        {
+            color: black;
+            font-weight: bolder;
+            font-size: large;
+        }
+        input:hover
+        {
+            background-color: red;
+        }
+        .ach
+        {
+            background-color: rgb(8, 27, 41);
+            margin-top: 5%;
+            margin-left: 150px;
+            margin-right: 60px;
+            border-radius: 20px;
+            box-shadow: 7px 7px 7px greenyellow;
+        }
+        .cont
+        {
+            background-color: rgb(18, 46, 67);
+            margin-top: 5%;
+            margin-left: 150px;
+            margin-right: 60px;
+            border-radius: 20px;
+            box-shadow: 7px 7px 7px aqua;
+        }
+        .glow
+        {
+            box-shadow: 7px 7px 7px blue;
+            animation-name: anime;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes anime
+        {
+            0%
+            {
+                box-shadow: 7px 7px 7px aqua;
+            }
+            25%
+            {
+                box-shadow: 7px 7px 7px red;
+            }
+            50%
+            {
+                box-shadow: 7px 7px 7px blue;
+            }
+            75%
+            {
+                box-shadow: 7px 7px 7px greenyellow;
+            }
+            100%
+            {
+                box-shadow: 7px 7px 7px green;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="navi">
+        <div>
+            <ul style="list-style-type: none;">
+                <li class="li" style="position: fixed;margin-left: 1290px;"><a href="#cont"ma>Contacts</a></li>
+                <li class="li"  style="position: fixed;margin-left: 1125px;"><a href="#tri">Achievements</a></li>
+                <li class="li" style="position: fixed;margin-left: 1000px;"><a href="#lin">About Me</a></li>
+                <li class="li" style="position: fixed;margin-left: 900px;"><a href="#hom">Home</a></li>
+                <li class="le">Harshiith.</li>
+            </ul>
+        </div>
+        <div class="wo glow" id="hom">
+            <div style="margin-top: 30%;">
+            <h1 style="text-shadow: 2px 2px 3px red;">Hi, I'm Harshiith.V</h1>
+            <h2>ECE Student</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua.</p>
+                <h3>Email:</h3>
+                <p>harshiith420@gmail.com</p>
+            </div>
+                <img style="margin-top: 0px;border: 1px solid rgb(8, 27, 41);border-radius: 2cm;" src="https://i.etsystatic.com/41164611/r/il/4bd5f8/4657019930/il_570xN.4657019930_2ge3.jpg">
+        </div>
+        <div class="about glow" id="lin">
+            <h1 style="color:white;text-align:  center;font-family: sans-serif;">About Me</h1>
+            <hr>
+            <center>
+                <img src="https://i.etsystatic.com/41164611/r/il/4bd5f8/4657019930/il_570xN.4657019930_2ge3.jpg" height="200px" width="200px" style="border: 1px solid black;border-radius: 50%;box-shadow: 5px 5px 5px white;">
+            </center>
+            <h2 style="color:white;text-align: center;">ECE STUDENT</h2>
+            <p style="text-align: center;color: white;font-size:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. </p>
+        </div>
+        <div class="ach glow" id="tri">
+            <h1 style="color:white;text-align: center;font-family: sans-serif;">Achievements</h1>
+            <hr>
+            <div style="border: 2px solid white;float: left;margin-left: 10px;border-radius: 10px;margin-bottom: 10px;box-shadow: 5px 5px 4px white;">
+                <h3 style="color: white;font-family: sans-serif;text-align: center;">Youtuber</h3>
+                <p style="text-align: center;color: white;font-size:20px">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit,sed do eiusmod<br> tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div style="border: 2px solid white;float: left;margin-left: 10px;border-radius: 10px;margin-bottom: 10px;margin-top: 150px;box-shadow: 5px 5px 4px white;">
+                <h3 style="color: white;font-family: sans-serif;text-align: center;">Captain</h3>
+                <p style="text-align: center;color: white;font-size:20px">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit,sed do eiusmod<br> tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div style="border: 2px solid white;float: left;margin-left: 10px;border-radius: 10px;margin-bottom: 10px;margin-top: 300px;box-shadow: 5px 5px 4px white;">
+                <h3 style="color: white;font-family: sans-serif;text-align: center;">Leader</h3>
+                <p style="text-align: center;color: white;font-size:20px">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit,sed do eiusmod<br> tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="cont glow" id="cont">
+            <h1 style="color:white;text-align: center;font-family: sans-serif;">Contacts</h1>
+            <hr>
+            <input type="text" placeholder="ENTER NAME" style="border: 2px solid red; margin-left: 20px;padding: 20px;border-radius: 2cm;width: 20%;box-shadow: 3px 3px 3px red;">
+            <input type="tel" placeholder="ENTER PHONE NO" style="border: 2px solid red; margin-left: 20px;padding: 20px;border-radius: 2cm;width: 20%;margin-left: 21%;box-shadow: 3px 3px 3px red;">
+            <br>
+            <input type="email" placeholder="ENTER EMAIL" style="border: 2px solid red; margin-left: 20px;padding: 20px;border-radius: 2cm;width: 20%;margin-left: 25%;box-shadow: 3px 3px 3px red;">
+            <input type="text" placeholder="ENTER SUBJECT" style="border: 2px solid red; margin-left: 20px;padding: 20px;border-radius: 2cm;width: 20%;margin-left: 21%;box-shadow: 3px 3px 3px red;">
+            <br>
+            <center>
+            <textarea height="100px" width="100px" style="margin-top: 5%;border: 2px solid red;padding: 60px;margin-bottom: 20px;box-shadow: 3px 3px 3px red;" placeholder="COMMENTS">
+
+            </textarea>
+        </center>
+            <br>
+            <center>
+                <input type="submit" style="border: 2px solid red; margin-left: 20px;padding: 10px;border-radius: 2cm;width: 20%;margin-bottom: 30px;margin-right: 15px;box-shadow: 3px 3px 3px red;">
+            </center>
+        </div>
+    </div>
+</body>
+</html>
